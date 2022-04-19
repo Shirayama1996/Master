@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Buổi 2</title>
+</head>
+<body>
+	<h2>Submit form</h2>
+	<form action="processLogin.php" method="POST">
+		Username: <input type="text" name="username" required>
+		<br>
+		<br>
+		Password: <input type="password" name="password" required>
+		<br>
+		<br>
+		Giới tính: 
+		<br>
+		<input type="radio" value="nam" name="gender"> Nam
+		<br>
+		<input type="radio" value="nữ" name="gender" checked> Nữ
+		<br>
+		<input type="radio" value="khác" name="gender"> Khác
+		<br>
+		Sở thích:
+		<br>
+		<input type="checkbox" value="house" checked name="hobbies[]"> Nhà
+		<br>
+		<input type="checkbox" value="car" checked name="hobbies[]"> Xe hơi
+		<br>
+		<input type="checkbox" value="swimming" name="hobbies[]"> Bơi lội
+		<br>
+		<br>
+		Quốc gia:
+		<br>
+		<select name="country" required>
+			<option value="">---Vui lòng chọn---</option>
+			<option value="vn">Việt Nam</option>
+			<option value="lao">Lào</option>
+			<option value="cpc">Campuchia</option>
+		</select>
+		<br>
+		<textarea name="message" cols="30" row="10"></textarea>
+		<br>
+		<button type="submit">Login</button>
+		<br>
+		<input type="submit" value="Login">
+	</form>
+	<br>
+	<br>
+	<h2>Không thể submit form với nút có type là button</h2>
+	<form action="processLogin.php" method="POST">
+		Username: <input type="text" name="username">
+		<br>
+		<br>
+		Password: <input type="password" name="password">
+		<br>
+		<br>
+		<button type="button">Login</button>
+		<br>
+		<input type="button" value="Login">
+	</form>
+	<br>
+	<br>
+	<h2>Button type reset</h2>
+	<form action="processLogin.php" method="POST">
+		Username: <input type="text" name="username">
+		<br>
+		<br>
+		Password: <input type="password" name="password">
+		<br>
+		<br>
+		<button type="reset">Reset</button>
+		<br>
+		<input type="reset" value="Reset">
+	</form>
+	<h2>Món ăn yêu thích</h2>
+	<ul>
+		<li>Thịt</li>
+		<li>Trứng</li>
+		<li>Sữa</li>
+	</ul>
+	<h2>Danh sách công việc</h2>
+	<ol>
+		<li>Task1</li>
+		<li>Task2</li>
+		<li>Task3</li>
+	</ol>
+	<div style="border: 1px solid red">
+		<b>A1</b>
+		<br>
+		<i>A2</i>
+	</div>
+	<br>
+	<span>A3</span>
+	<br>
+	<label for="username">Tên người dùng:</label>
+	<input type="text" id="username">
+	<br>
+	<iframe src="https://vuighe.net/" frameborder="0" width="100%" height="500px"></iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8758573317955!2d106.64674751477112!3d10.74404999234353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e613b795833%3A0xb3c037464cbe39cd!2zMTcgTWFpIFh1w6JuIFRoxrDhu59uZywgUGjGsOG7nW5nIDMsIFF14bqtbiA2LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIOi2iuWNlw!5e0!3m2!1szh-TW!2s!4v1620555266411!5m2!1szh-TW!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/AnvHmGsTwsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<br>
+	<video src="video.mp4" width="400px" controls></video>
+	<br>
+	<audio src="audio.mp3" controls></audio>
+	<br>
+	<h2>Figure</h2>
+	<figure>
+		<img src="images/cho-con.jpg" alt="Con chó nhỏ">
+		<figcaption>
+			Hình 1. Hình con chó nhỏ
+		</figcaption>
+	</figure>
+
+	<picture>
+		<source media="(min-width:992px)" srcset="images/con-cho-1.jpg">
+		<source media="(min-width:768px)" srcset="images/con-cho-2.jpg">
+		<img src="images/con-cho-3.jpg" alt="">
+	</picture>
+	<h2>Table</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>STT</th>
+				<th>Tên</th>
+				<th>Giới tính</th>
+				<th>Công việc</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Nhân</td>
+				<td>nam</td>
+				<td>HR</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Thảo</td>
+				<td>nữ</td>
+				<td>IT</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Tèo</td>
+				<td>nam</td>
+				<td>Diễn viên</td>
+			</tr>
+
+		</tbody>
+	</table>
+	<h2>SVG</h2>
+	<svg width="400px" viewBox="0 0 32 32" style="background-color:#F7F7F7; border:1px solid black;">
+		<path d="M 1 1 L 31 1 L 31 31 L 1 31 z" stroke-width="0.5" stroke="green" fill="red"></path>
+	</svg>
+	<h2>Symbol</h2>
+	<svg width="0" height="0">
+		<defs>
+			<symbol id="square" viewBox="0 0 32 32">
+				<path d="M 0 32 L 16 0 L 32 32 z" stroke-width="0.5"></path>
+			</symbol>
+		</defs>
+	</svg>
+	<br>
+	<h2>Use 1</h2>
+	<svg width="300px" height="300px" style="background-color:#F7F7F7; border:1px solid black;">
+		<use xlink:href="#square" stroke="red">
+	</svg>
+
+	<h2>Use 2</h2>
+	<svg width="200px" height="200px" style="background-color:#F7F7F7; border:1px solid black;">
+		<use xlink:href="#square" stroke="purple">
+	</svg>
+	
+</body>
+</html>
